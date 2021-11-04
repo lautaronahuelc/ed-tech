@@ -1,0 +1,266 @@
+html{
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+*,
+*::after,
+*::before{
+    box-sizing: inherit;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* ----------------- header ----------------->*/
+
+.header{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    height: 70px;
+    color: #fff;
+    background-color: #353a4e;
+}
+
+.logo{
+    width: 50px;
+}
+
+.user{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: inherit;
+}
+
+.user-cart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: inherit;
+    border-bottom: 2px solid transparent;
+}
+
+.shopping-cart{
+    width: 25px;
+}
+
+.user-button{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 250px;
+    height: inherit;
+    border-bottom: 2px solid transparent;
+}
+
+.user-button:hover,
+.user-cart:hover{
+    border-bottom: 2px solid #fff;
+    background-color: #292b37;
+    cursor: pointer;
+}
+
+.user-avatar{
+    width: 50px;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+}
+
+.user-name{
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+/* ----------------- hero ----------------->*/
+
+.hero{
+    height: 400px;
+    padding: 0 50px;
+    background-image: url(../assets/img/hero.jpg);
+    background-size: 100%;
+    background-position: top -200px right 0;
+    color: #fff;
+    }
+
+.hero-contenido{
+    position: absolute;
+    top: 25%;
+    width: 450px;
+    margin: 0;
+}
+
+.hero-contenido h2{
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.formulario{
+    display: flex;
+}
+
+input[type="search"]{
+    flex-basis: 100%;
+    height: 45px;
+    padding-left: 10px; 
+    background-image: url(../assets/img/lupa.png);
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position: center right 10px;
+    border: none;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+input[type="search"]:focus{
+    box-shadow: 0 0 1px 5px rgba(229, 103, 23, 0.3);
+    outline: 0 none;
+
+}
+
+/* ----------------- barra ----------------->*/
+
+.barra{
+    display: flex;
+    justify-content: space-evenly;
+    background: linear-gradient(to right, #3ba5b1, #76bcc2);
+}
+
+.barra div{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.barra div p{
+    font-size: 0.9rem;
+    color: #fff;
+}
+
+.barra div i{
+    font-size: 2rem;
+    font-weight: 900;
+    color: #fff;
+}
+
+/* ----------------- main ----------------->*/
+
+main{
+    padding: 50px;
+    color: #828687;
+    background-color: #f3f4f6;
+}
+
+h1{
+    font-weight: 400;
+}
+
+/* ----------------- cada article ----------------->*/
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.card{
+    text-align: center;
+    border-radius: 5px;
+    background-color: #fff;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.card header{
+    padding: 20px;
+    overflow: hidden;
+}
+
+.card h3{
+    margin: 0;
+}
+
+.profesor {
+    font-style: italic;
+    font-size: 0.9rem;
+    color: #bbbbbb;
+}
+
+.card img{
+    width: 100%;
+    height: 100%;
+}
+
+.card .info{
+    padding: 10px;
+    overflow: hidden;
+}
+
+.valoracion-precio{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.precio{
+    font-weight: 700;
+    color: #3ba5b1;
+}
+
+.fa-star{
+    color: gold;
+}
+
+.card footer button{
+    width: 100%;
+    padding: 15px;
+    font-weight: 700;
+    color: #fff;
+    background-color: #3ba5b1;
+    border: none;
+}
+
+.card footer button:hover{
+    background-color: #1099a8;
+    cursor: pointer;
+}
+
+/* ----------------- footer ----------------->*/
+
+.pie-pagina{
+    height: 100px;
+    background-color: #c0c0c0;
+}
+
+.menu{
+    height: inherit;
+}
+
+.menu ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0;
+    height: inherit;
+    list-style: none;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #353a4e;
+}
