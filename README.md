@@ -1,3 +1,5 @@
 # ed-tech
 
-Interfaz creada con HTML y CSS. Falta agregarle interactividad con JS.
+Proyecto aún en proceso...
+
+Se trata de una plataforma educativa que permite agregar al carrito cursos de programación en venta.
