@@ -5,20 +5,39 @@ const listaCursos = document.querySelector('#lista-cursos'); // Contenedor de lo
 const vaciarCarritoBtn = document.querySelector('#vaciar-carrito'); // Botón vaciar carrito
 let articulosCarrito = [];
 
+console.log(listaCursos.target);
+
 cargarEventListener();
 function cargarEventListener(){
-    // Cuando se presione el botón "AGREGAR AL CARRITO"
+    // Cuando se presione el div que contiene todos los cursos
     listaCursos.addEventListener('click', agregarCurso);
+
+    // Elimina cursos del carrito
+    carrito.addEventListener('click', eliminarCurso);
 }
 
 // Funciones
 function agregarCurso(e){
+    // Verificar que se presiona click sobre el elemento "AGREGAR AL CARRITO"
     if(e.target.classList.contains('agregar-carrito')) {
         const cursoSeleccionado = e.target.parentElement.parentElement;
         leerDatosCurso(cursoSeleccionado);
     }
 }
-        
+    
+// Elimina un curso del carrito
+function eliminarCurso(e){
+    if(e.target.classList.contains('borrar-curso')){
+        const cursoId = e.target.getAttribute('data-id');
+
+        // Quito del arreglo articulosCarrito el curso con el id "cursoId"
+        articulosCarrito = articulosCarrito.filter(curso => curso.id !== cursoId);
+
+        console.log(articulosCarrito);
+
+        carritoHTML();
+    }
+}
 
 // Lee el contenido del HTML al que le dimos click y extrae la información del curso
 function leerDatosCurso(curso){
@@ -69,7 +88,7 @@ function carritoHTML(){
             <td>${curso.precio}</td>
             <td>${curso.cantidad}</td>
             <td>
-                <button class="borrar-curso">×</button>
+                <button class="borrar-curso" data-id="${curso.id}">×</button>
             </td>
         `;
 
