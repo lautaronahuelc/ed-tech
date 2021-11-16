@@ -34,9 +34,9 @@ body{
 
 .user{
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
-    width: 350px;
+    width: max-content;
     height: inherit;
 }
 
@@ -154,10 +154,11 @@ body{
     height: 400px;
     padding: 0 50px;
     background-image: url(../assets/img/hero.jpg);
-    background-size: 100%;
-    background-position: top -200px right 0;
+    background-size: cover;
+    background-position: top right;
+    background-repeat: no-repeat;
     color: #fff;
-    }
+}
 
 .hero-contenido{
     position: absolute;
@@ -243,6 +244,9 @@ h1{
 }
 
 .card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     text-align: center;
     border-radius: 5px;
     background-color: #fff;
@@ -308,28 +312,48 @@ h1{
 /* ----------------- footer ----------------->*/
 
 .pie-pagina{
-    height: 100px;
-    background-color: #c0c0c0;
+    background-color: #d1d1d1;
+
 }
 
-.menu{
+.pie-pagina__menu{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     height: inherit;
 }
 
-.menu ul{
+.pie-pagina__menu h3{
+    font-size: 0.8rem;
+    color: #474747;
+}
+
+.pie-pagina__menu > div{
+    margin: 10px 50px;
+}
+
+.pie-pagina__menu div ul{ 
+    margin-left: 20px;
+    padding-left: 20px;  
+    list-style: none;
+    border-left: 1px solid #696969;
+}
+
+.redes{
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
-    margin: 0;
-    height: inherit;
-    list-style: none;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #f3f4f6;
 }
 
-.menu ul li a{
+.pie-pagina__menu a{
+    font-size: 0.8rem;
     text-decoration: none;
-    color: #353a4e;
+    color: #545970;
+    border-bottom: 1px solid transparent;
 }
 
-.menu ul li a:hover{
-    text-shadow: 0 0 10px #f3f4f6;
+.pie-pagina__menu a:hover{
+    border-bottom: 1px solid #545970;
 }
+
