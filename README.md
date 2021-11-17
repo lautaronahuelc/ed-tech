@@ -12,7 +12,7 @@ En esta primera versión podrás ver un listado con una serie de cursos que est�
 
 Mirá le diseño 👇
 
-<img src="https://github.com/lautaronahuelc/ed-tech/blob/master/resultado.jpg"/>
+<img src="https://github.com/lautaronahuelc/ed-tech/blob/master/resultado.jpg" target="_blanck"/>
 
 ***
 
