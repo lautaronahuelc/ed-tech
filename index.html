@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" media="only screen and (max-width:620px)" href="css/small-layout.css">
+    <script src="js/app.js" defer></script>
     <title>W | Cursos online</title>
 </head>
 <body>
@@ -19,7 +20,7 @@
         <div class="user">
             <div class="user-cart">
                 <img class="shopping-cart" src="assets/img/shopping-cart.png" alt="Icono de carrito de compras">
-                <div id="carrito">
+                <div id="carrito" class="carrito carrito-hidden">
                     <table id="lista-carrito">
                         <thead>
                             <tr>
@@ -30,12 +31,10 @@
                                 <th></th>
                             </tr>
                         </thead>
-                        <tbody>
-
-                        </tbody>
+                        <tbody></tbody>
                     </table>
                     <a href="#" id="vaciar-carrito">VACIAR CARRITO</a>
-                </div>
+                </div> <!-- Carrito -->
             </div>
             <div class="user-button">
                 <img class="user-avatar "src="assets/img/avatar.jpg" alt="Imagen de perfil">
@@ -53,7 +52,7 @@
                 <input type="search" placeholder="Busca tu próximo curso...">
             </form>
         </div>
-    </section>
+    </section> <!-- Hero -->
 
     <section class="barra">
         <div>
@@ -68,7 +67,7 @@
             <i class="far fa-clock"></i>
             <p>Acceso de por vida <br> Aprende a tu ritmo</p>
         </div>
-    </section>
+    </section> <!-- Barra -->
 
     <main>
         <h1>Cursos destacados</h1>
@@ -307,7 +306,5 @@
             </div>
         </nav>
     </footer>
-
-    <script src="js/app.js"></script>
 </body>
 </html>
