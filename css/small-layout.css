@@ -10,10 +10,8 @@
     display: none;
 }
 
-.user-cart:hover #carrito{
-    position: fixed;
-    right: 0;
-    width: 100vw;
+.carrito{
+    display: none;
 }
 
 /* ----------------- barra ----------------->*/
